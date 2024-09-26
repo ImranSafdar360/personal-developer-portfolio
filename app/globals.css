@@ -2,32 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Fonts */
+@font-face {
+  font-family: AntonSC;
+  src: url('../public/fonts/Anton_SC/AntonSC-Regular.ttf');
+}
+@font-face {
+  font-family: Anton;
+  src: url('../public/fonts/Anton/Anton-Regular.ttf');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: Lato;
+  src: url('../public/fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../public/fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: Tanker;
+  src: url('../public/fonts/Tanker/Tanker-Regular.ttf');
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  scrollbar-width: 0;
+}
+ .scroller-container {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 200px;
+  background-color: black;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.scroller {
+  width: 100%;
+  background-color: white;
+  height: 40px;
+  position: relative;
+  transition: transform 0.1s ease-out;
+  border-radius: 10px;
+  cursor: pointer; 
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
