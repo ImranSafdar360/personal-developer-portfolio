@@ -9,38 +9,45 @@ import AboutMe from '@/components/about-section/AboutMe';
 import ProjectSection from '@/components/project-section/ProjectSection';
 import SkillSection from '@/components/skill-section/SkillSection';
 import CallToAction from '@/components/footer-section/CallToAction';
-import Servies from '@/components/service-section/Servies';
 import ServiceSection from '@/components/service-section/ServiceSection';
+import Marquee from '@/components/shared-components/ParralexText';
 
 const Home = () => {
   return (
-    <Container>
+    <Container className='flex flex-col gap-[100px]'>
 
-      <Section className="pt-0">
+      <Section>
         <HeroSection />
         <HeroImage />
       </Section>
 
-      <Section className="pt-[90px]">
+      <Section>
         <AboutMe />
       </Section>
       
-      <Section className="pt-[90px]">
+      <Section>
         <ProjectSection />
       </Section>
 
-      <Section className="pt-[90px]">
+      <Section>
+        <Marquee />
+      </Section>
+
+      <Section>
         <ServiceSection />
       </Section>
 
-      <Section className="pt-[90px]">
+      <Section>
         <SkillSection />
       </Section>
 
-      <Section className="py-[90px]">
+      <Section>
         <CallToAction />
       </Section>
       
+      {/* <div className='fixed bottom-5 right-5 z-[999]'>
+      <RotatingLogo />
+      </div> */}
     </Container>
   )
 }

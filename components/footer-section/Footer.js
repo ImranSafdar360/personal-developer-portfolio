@@ -1,11 +1,9 @@
 import React from 'react'
-import Container from '../Container';
 import Link from 'next/link';
-import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-      <div className='w-full h-full bg-whole text-whole-text px-[60px]'>
+    <div className='w-full h-full bg-whole text-whole-text px-[60px] pt-[120px]'>
       <div className='w-full flex justify-between items-center px-5'>
       <div className='flex flex-col justify-start items-start gap-2'>
       <h3 className='text-[24px] font-anton text-whole-text mb-3'>Navigation</h3>
@@ -54,27 +52,27 @@ const Footer = () => {
           </div>
       </div>
       <div className='w-full'>
-      <div className='w-full text-center overflow-hidden'>
-      <h1 className='text-[18.3vw] font-antonSc leading-[17vw] translate-y-14
+        <div className='w-full text-center overflow-hidden'>
+          <h1 className='text-[18.3vw] font-antonSc leading-[17vw] translate-y-14
         ' style={{ wordSpacing: '-40px' }}>Imran Devify</h1>
-      </div>
-        <div className='w-full px-10 py-8 flex justify-between items-center bg-whole text-whole-text z-10 border-t border-white-border'>
-          <p>© 2024 Imran Devify
-          All rights reserved.</p>
-          <div className='flex justify-start items-center gap-5'>
-            <Link href="#">
-           <FaLinkedin size={25} />
-            </Link>
-            <Link href="#">
-            <FaGithub size={25} />
-            </Link>
-            <Link href="#">
-            <FaFacebook size={25} />
-            </Link>
-            <Link href="#">
-            <FaInstagram size={25} />
-            </Link>
-          </div>
+        </div>
+        <div className='w-full px-10 py-8 flex justify-between items-center gap-10 bg-whole text-whole-text z-10 border-t border-white-border'>
+            <p>© 2024 Imran Devify
+              All rights reserved.</p>
+            <div className='flex justify-start items-start gap-5'>
+              <Link href="#" className='text-[16px] font-lato font-semibold text-secondary-text'>
+                Home
+              </Link>
+              <Link href="#" className='text-[16px] font-lato font-semibold text-secondary-text'>
+                Projects
+              </Link>
+              <Link href="#" className='text-[16px] font-lato font-semibold text-secondary-text'>
+                About Me
+              </Link>
+              <Link href="#" className='text-[16px] font-lato font-semibold text-secondary-text'>
+                Contact Me
+              </Link>
+            </div>
         </div>
       </div>
     </div>

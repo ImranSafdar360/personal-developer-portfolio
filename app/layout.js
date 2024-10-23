@@ -10,9 +10,9 @@ import Footer from "@/components/footer-section/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
-  const [isDragging, setIsDragging] = useState(false); 
-  const [startY, setStartY] = useState(0); 
-  const [startScrollTop, setStartScrollTop] = useState(0); 
+  const [isDragging, setIsDragging] = useState(false);
+  const [startY, setStartY] = useState(0);
+  const [startScrollTop, setStartScrollTop] = useState(0);
 
   useEffect(() => {
     const scroller = document.querySelector(".scroller");
@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
       const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const scrollPercent = (scrollTop / scrollHeight) * 100;
 
-      const containerHeight = 200; 
-      const scrollerHeight = 40; 
-      const maxScrollerPosition = containerHeight - scrollerHeight; 
+      const containerHeight = 200;
+      const scrollerHeight = 40;
+      const maxScrollerPosition = containerHeight - scrollerHeight;
 
       const scrollerPosition = (scrollPercent / 100) * maxScrollerPosition;
 
@@ -72,19 +72,19 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body  style={{
-          position: "relative",
-        }}
- className={inter.className}>
-    <div className="scroller-container">
+      <body style={{
+        position: "relative",
+      }}
+        className={inter.className}>
+        <div className="scroller-container">
           <div className="scroller"></div>
         </div>
-       <header>
-       <Navbar />
-       </header>
+        <header>
+          <Navbar />
+        </header>
         <main className="bg-whole text-whole-text">{children}</main>
         <footer>
-        <Footer />
+          <Footer />
         </footer>
       </body>
     </html>

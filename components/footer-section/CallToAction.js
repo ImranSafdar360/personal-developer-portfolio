@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const CallToAction = () => {
   return (
-    <div className='w-full px-[90px] flex flex-col justify-start items-start gap-16'>
+    <div className='w-full px-[120px] flex flex-col justify-start items-start gap-16'>
       <div className='w-full flex justify-between items-center'>
         <h1 className='text-[85px] font-antonSc font-light leading-[92px]'>Let's Work <br />Together</h1>
         <span className='text-[42px] font-lato font-light rotate-6'>↙</span>
