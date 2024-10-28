@@ -30,10 +30,6 @@ const Home = () => {
       </Section>
 
       <Section>
-        <Marquee />
-      </Section>
-
-      <Section>
         <ServiceSection />
       </Section>
 
