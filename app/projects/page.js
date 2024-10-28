@@ -3,7 +3,7 @@ import Container from '@/components/Container'
 import CallToAction from '@/components/footer-section/CallToAction'
 import SelectedWork from '@/components/project-section/SelectedProjects';
 import Section from '@/components/Section'
-import { projects } from '@/data/Projects';
+import projects from '@/data/projectsData';
 import React from 'react'
 
 const Projects = () => {

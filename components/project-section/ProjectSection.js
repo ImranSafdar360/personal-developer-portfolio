@@ -4,7 +4,8 @@
 import React from 'react'
 import Button from '../Button';
 import SelectedWork from './SelectedProjects';
-import { projects } from '@/data/Projects';
+import projects from '@/data/projectsData';
+
 
 const ProjectSection = () => {
   return (

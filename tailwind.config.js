@@ -21,7 +21,6 @@ module.exports = {
         anton: ['Anton'],
         lato: ['Lato'], 
         roboto: ['Roboto'], 
-        tanker: ['Tanker']
       },
       borderColor: {
         "grey-border": '#484848',

@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-import { useState } from 'react';
+import React from 'react';
 import SpotlightCard from '../shared-components/SpotlightCard';
 
 const servicesData = [
