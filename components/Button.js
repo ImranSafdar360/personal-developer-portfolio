@@ -1,10 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = ({title, classes}) => {
+const Button = ({title, classes, email, subject, body, whatsappNumber, message, type = "email"}) => {
+  const openEmailPopup = (email, subject, body) => {
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
+  const openWhatsApp = (number, message) => {
+    const whatsappLink = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, "_blank");
+  };
+  const handleClick = () => {
+    if (type === "email") {
+      openEmailPopup(email, subject, body);
+    } else if (type === "whatsapp") {
+      openWhatsApp(whatsappNumber, message);
+    }
+  };
   return (
     <StyledWrapper>
-      <button className={`relative px-[25px] py-[10px] rounded-full border border-white-border font-roboto font-medium text-whole-text bg-whole overflow-hidden inline-block cursor-pointer z-[2] ${classes}`}>
+      <button onClick={handleClick} className={`relative w-full max-w-[280px] px-[25px] py-[10px] rounded-full border border-white-border font-roboto font-medium text-whole-text bg-whole overflow-hidden inline-block cursor-pointer z-[2] ${classes}`}>
         <span className="text relative z-[10]">{title}</span>
         <span className="w-full text-solid-text">{title}</span>
       </button>

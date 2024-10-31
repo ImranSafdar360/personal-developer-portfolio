@@ -23,10 +23,10 @@ export default function SelectedWork({ projects, limit }) {
               </div>
               <div className="w-[45%] px-[12px]">
                <div className={` flex flex-col justify-center items-start gap-[15px] ${index % 2 === 0 ? 'pl-[75px]' : 'pr-[75px] pl-[0px]'}`}>
-               <p className="py-[6px] px-[15px] flex justify-center items-center rounded-[30px] mb-[15px] bg-sky-300 bg-opacity-80 text-[16px] font-lato font-medium text-sky-900">Project Tag</p>
-                <Link  href={`/projects/${project.id}`} className="text-[36px] font-anton text-whole-text leading-[40px]">{project.title}</Link>
-                <p className="text-[18px] leading-[21px] font-roboto font-medium mb-[30px]">{project.description}</p>
-                <Link className="text-[18px] font-roboto font-medium underline text-sky-300" href={`/projects/${project.id}`}>
+               <p className="py-[6px] px-[15px] flex justify-center items-center rounded-[30px] mb-[15px] bg-yellow-400 text-[16px] font-lato font-medium text-yellow-900">{project.tag}</p>
+                <Link  href={`/projects/${project.id}`} className="text-[36px] font-anton text-whole-text leading-[40px] hover:text-secondary-text transition-all line-clamp-2">{project.title}</Link>
+                <p className="text-[18px] leading-[21px] font-roboto font-medium mb-[30px] line-clamp-3">{project.description}</p>
+                <Link className="text-[18px] font-roboto font-medium underline text-yellow-400" href={`/projects/${project.id}`}>
                   Check Full Case Study
                 </Link>
                </div>

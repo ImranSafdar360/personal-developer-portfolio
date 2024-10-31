@@ -21,9 +21,9 @@ const SkillSection = () => {
   return (
     <div className='w-full h-full flex flex-col justify-center items-center gap-10'>
       {/* <Marquee /> */}
-      <div className='flex flex-col justify-center items-center gap-10'>
-      <h1 className='text-[48px] leading-[42px] font-antonSc uppercase text-whole-text'>The Skillset Behind the Vision.</h1>
-        <p className='text-[20px] font-lato font-medium leading-[26px] text-secondary-text'>Turning ideas into reality with a dynamic mix of creativity and expertise.</p>
+      <div className='flex flex-col justify-center items-center gap-[20px]'>
+      <h1 className='text-[48px] leading-[42px] font-anton text-whole-text'>The Skillset Behind the Vision.</h1>
+        <p className='text-[20px] font-lato font-medium leading-[26px] text-secondary-text text-center'>Transforming ideas into reality with a dynamic blend of creativity and technical expertise, <br /> delivering innovative digital solutions that engage and inspire.</p>
       </div>
      <div className='w-[70%] flex flex-wrap justify-center items-center gap-x-10 gap-y-5'>
       {skills.map((logo, index) => (

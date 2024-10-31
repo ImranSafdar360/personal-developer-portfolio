@@ -10,7 +10,6 @@ import Section from '@/components/Section'
 import Link from 'next/link';
 import Button from '@/components/Button'
 import React from 'react'
-import Method from '@/components/about-section/ProjectProcess';
 
 const About = () => {
   return (
@@ -18,10 +17,8 @@ const About = () => {
 
       <Section className='pt-[80px]'>
         <div className='w-full flex flex-col justify-center items-center gap-[15px]'>
-          {/* <p className='text-[20px] font-lato font-normal text-yellow-400'>Who I Am
-          </p> */}
-          <h1 className='font-anton text-[72px] leading-[78px] text-center'>Browse our solutions <br />across industries</h1>
-          <p className='font-roboto font-medium text-center text-[22px] text-secondary-text'>Transform your site into a modern masterpiece with vibrant animations,<br /> functional elements, and pixel perfect accuracy.</p>
+          <h1 className='font-anton text-[72px] leading-[78px] text-center'>Empowering Brands with <br /> Innovative Digital Solutions</h1>
+          <p className='font-roboto font-medium text-center text-[22px] text-secondary-text'>Passionate about transforming ideas into engaging experiences through innovative design <br /> and expert development, empowering brands to thrive in the digital landscape.</p>
         </div>
       </Section>
 
