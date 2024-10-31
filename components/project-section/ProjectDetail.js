@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, ExternalLink, Github } from 'lucide-react';
 import Section from '../Section';
 import Container from '../Container';
 import CallToAction from '../footer-section/CallToAction';
