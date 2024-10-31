@@ -5,6 +5,7 @@ import React from 'react'
 import Button from '../Button';
 import SelectedWork from './SelectedProjects';
 import projects from '@/data/projectsData';
+import Link from 'next/link';
 
 
 const ProjectSection = () => {
@@ -19,7 +20,9 @@ const ProjectSection = () => {
       </div>
       <SelectedWork projects={projects} limit={4} />
       <div className='w-full flex justify-end items-center'>
+      <Link href='/projects'>
         <Button title="View More Projects" classes="px-[30px] py-[20px]" />
+        </Link>
       </div>
     </div>
   )

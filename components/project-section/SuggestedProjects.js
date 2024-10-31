@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function SuggestedProjects({ projects, limit }) {
+  
   return (
     <section className="w-full h-full">
       <div className="w-full flex justify-start items-center gap-[30px] overflow-auto">
@@ -22,8 +23,8 @@ export default function SuggestedProjects({ projects, limit }) {
               </div>
               </Link>
               <div className="w-full flex flex-col gap-[15px]">
-              <Link href={`/projects/${project.id}`} className="text-[36px] font-anton text-whole-text leading-[40px]">{project.title}</Link>
-              <p className="text-[18px] leading-[21px] font-roboto font-medium mb-[30px]">{project.description}</p>
+              <Link href={`/projects/${project.id}`} className="text-[36px] font-anton text-whole-text leading-[40px] line-clamp-2 hover:text-secondary-text transition-colors">{project.title}</Link>
+              <p className="text-[18px] leading-[21px] font-roboto font-medium mb-[30px] line-clamp-3">{project.description}</p>
               <Link className="text-[18px] font-roboto font-medium underline text-yellow-500" href={`/projects/${project.id}`}>
                   Check Full Case Study
                 </Link>

@@ -5,6 +5,7 @@ import React, { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Magnet from '../shared-components/MagnetEffect';
 import { gsap } from "gsap";
+import { motion } from "framer-motion";
 import LinkedIn from '../../public/icons/linkedin-icon.png'
 import Instagram from '../../public/icons/instagram-icon.png'
 import Facebook from '../../public/icons/facebook-icon.png'
@@ -31,6 +32,68 @@ const Navbar = () => {
   const bgCircleRef = useRef(null);
   const linkContainerRef = useRef(null);
   const linksRefs = useRef([]);
+  const logoLinksRefs = useRef([]);
+
+  const DURATION = 0.25;
+const STAGGER = 0.025;
+
+const FlipLink = ({ children, href }) => {
+  return (
+    <motion.a
+      initial="initial"
+      whileHover="hovered"
+      href={href}
+      className="relative block overflow-hidden whitespace-nowrap font-antonSc text-whole-text text-[130px] leading-[120px]"
+    >
+      <div>
+        {children.split("").map((l, i) => (
+          <motion.span
+            variants={{
+              initial: {
+                y: 0,
+              },
+              hovered: {
+                y: "-100%",
+              },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+            className="inline-block"
+            key={i}
+          >
+            {l}
+          </motion.span>
+        ))}
+      </div>
+      <div className="absolute inset-0">
+        {children.split("").map((l, i) => (
+          <motion.span
+            variants={{
+              initial: {
+                y: "100%",
+              },
+              hovered: {
+                y: 0,
+              },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+            className="inline-block"
+            key={i}
+          >
+            {l}
+          </motion.span>
+        ))}
+      </div>
+    </motion.a>
+  );
+};
 
   useEffect(() => {
     if (containerRef.current) {
@@ -82,6 +145,14 @@ const Navbar = () => {
           duration: 0.3,
         });
       });
+      logoLinksRefs.current.forEach((link, index) => {
+        gsap.to(link, {
+          opacity: 1,
+          x: 0,
+          delay: 0.3 + index * 0.1,
+          duration: 0.3,
+        });
+      });
     } else {
       gsap.to(topLineRef.current, { rotation: 0, y: 0, duration: 0.3, ease: "power2.out" });
       gsap.to(bottomLineRef.current, { rotation: 0, y: 0, duration: 0.3, ease: "power2.out" });
@@ -100,6 +171,13 @@ const Navbar = () => {
       });
 
       linksRefs.current.forEach((link) => {
+        gsap.to(link, {
+          opacity: 0,
+          x: -50,
+          duration: 0.3,
+        });
+      });
+      logoLinksRefs.current.forEach((link, index) => {
         gsap.to(link, {
           opacity: 0,
           x: -50,
@@ -152,32 +230,33 @@ const Navbar = () => {
         </Magnet>
 
         <div
-          className="fixed left-0 top-[100px] flex items-start justify-between leading-[70px] bg-transparent px-[60px] pt-[80px]"
+          className="fixed left-0 top-[100px] flex items-start justify-between leading-[70px] bg-transparent px-[55px] pt-[50px]"
           ref={linkContainerRef}
           style={{
             width: "100vw",
             height: "100vh",
           }}
         >
-          <div className="text-start">
+          <div className="text-start flex flex-col">
             {navLinks.map((link, index) => (
               <div
                 key={index}
                 ref={(el) => (linksRefs.current[index] = el)}
                 style={{ opacity: 0, transform: "translateX(-50px)" }}
               >
-                <Link href={link.link} onClick={handleLinkClick}>
-                  <h1 className="font-antonSc text-whole-text text-[85px] leading-[92px]">
+                  <FlipLink href={link.link} onClick={handleLinkClick}>
                     {link.title}
-                  </h1>
-                </Link>
+                  </FlipLink>
               </div>
             ))}
           </div>
-          <div className='flex flex-col justify-center items-center'>
+          <div className='flex flex-col justify-center items-center gap-[10px] mr-[13px]'>
             {navLogos.map((logo, index) => (
-              <a href="#" key={index}>
-                <img src={logo.logo.src} alt={logo.title} className='w-[50px] h-[50px] object-cover' /> {/* Use logo.logo.src to dynamically set the image */}
+              <a href="#" key={index}
+              ref={(el) => (logoLinksRefs.current[index] = el)}
+              style={{ opacity: 0, transform: "translateX(-50px)" }}
+              >
+                <img src={logo.logo.src} alt={logo.title} className='w-[50px] h-[50px] object-cover' />
               </a>
             ))}
           </div>
