@@ -5,28 +5,28 @@ import Link from "next/link";
 export default function SelectedWork({ projects, limit }) {
   return (
     <section className="w-full h-full">
-      <div className="w-full flex flex-col items-center gap-[140px]">
+      <div className="w-full flex flex-col items-center gap-[60px] lg:gap-[140px]">
       {projects.slice(0, limit).map((project, index) => (
             <div
               key={project.id}
-              className={`w-full h-[400px] rounded-2xl overflow-hidden flex flex-row justify-between items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+              className={`w-full min-h-[400px] rounded-2xl overflow-hidden flex flex-col justify-between items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
             >
-              <div className="w-[55%] h-full object-cover rounded-[30px] overflow-hidden">
+              <div className="w-full lg:w-[55%] h-[250px] md:h-[350px] lg:h-[430px] object-cover rounded-[30px] overflow-hidden ">
               <Link href={`/projects/${project.id}`}>
                 <img
                   src={project.image}
                   alt={project.title}
                   layout="fit"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </Link>
               </div>
-              <div className="w-[45%] px-[12px]">
-               <div className={` flex flex-col justify-center items-start gap-[15px] ${index % 2 === 0 ? 'pl-[75px]' : 'pr-[75px] pl-[0px]'}`}>
-               <p className="py-[6px] px-[15px] flex justify-center items-center rounded-[30px] mb-[15px] bg-yellow-400 text-[16px] font-lato font-medium text-yellow-900">{project.tag}</p>
-                <Link  href={`/projects/${project.id}`} className="text-[36px] font-anton text-whole-text leading-[40px] hover:text-secondary-text transition-all line-clamp-2">{project.title}</Link>
-                <p className="text-[18px] leading-[21px] font-roboto font-medium mb-[30px] line-clamp-3">{project.description}</p>
-                <Link className="text-[18px] font-roboto font-medium underline text-yellow-400" href={`/projects/${project.id}`}>
+              <div className="w-full lg:w-[45%] p-[4px] md:px-[8px] lg:px-[12px]">
+               <div className={`flex flex-col justify-center items-start gap-[15px] ${index % 2 === 0 ? 'lg:pl-[75px]' : 'lg:pr-[75px] lg:pl-[0px]'}`}>
+               <p className="py-2 px-4 bg-yellow-400 text-yellow-900 rounded-full text-[14px] md:text-[16px] font-lato font-medium mt-4">{project.tag}</p>
+                <Link  href={`/projects/${project.id}`} className="text-[24px] md:text-[28px] lg:text-[36px] font-anton text-whole-text hover:text-secondary-text transition-all line-clamp-2 leading-tight">{project.title}</Link>
+                <p className="text-[16px] md:text-[18px] font-roboto font-medium text-secondary-text line-clamp-3 leading-relaxed">{project.description}</p>
+                <Link className="text-[16px] md:text-[18px] font-roboto font-medium underline text-yellow-400" href={`/projects/${project.id}`}>
                   Check Full Case Study
                 </Link>
                </div>

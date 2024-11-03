@@ -10,18 +10,18 @@ import Link from 'next/link';
 
 const ProjectSection = () => {
   return (
-    <div className='w-full h-full min-h-[100vh] flex flex-col justify-between gap-[120px]'>
-      <div className='w-full flex justify-between items-start'>
+    <div className='w-full h-full min-h-[100vh] flex flex-col justify-between gap-[60px] lg:gap-[120px]'>
+      <div className='w-full flex flex-col xl:flex-row justify-between items-start'>
      <div className='flex flex-col justify-start items-start gap-[8px]'>
-     <p className='text-[24px] font-anton text-yellow-400'>My Work.</p>
-     <h1 className='text-[72px] leading-[73px] font-antonSc text-whole-text mb-[8px]'>Case studies</h1>
+     <p className="text-[20px] md:text-[24px] font-anton text-yellow-400">My Work.</p>
+     <h1 className="text-[36px] md:text-[48px] lg:text-[64px] xl:text-[72px] leading-none font-antonSc text-whole-text mb-2">Case studies</h1>
      </div>
-        <p className='text-[22px] font-roboto font-medium leading-[27px] text-secondary-text pt-[45px]'>Building visionary projects with seamless, interactive <br /> features. Each project is a step forward in <br /> modern web development.</p>
+        <p className="w-full lg:w-[520px] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-lato font-medium leading-relaxed text-secondary-text">Building visionary projects with seamless, interactive features. Each project is a step forward in modern web development.</p>
       </div>
       <SelectedWork projects={projects} limit={4} />
-      <div className='w-full flex justify-end items-center'>
-      <Link href='/projects'>
-        <Button title="View More Projects" classes="px-[30px] py-[20px]" />
+      <div className='w-full flex justify-start lg:justify-end items-center'>
+      <Link href="/projects">
+          <Button title="View More Projects" classes="px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 text-[14px] md:text-[16px] lg:text-[18px]" />
         </Link>
       </div>
     </div>

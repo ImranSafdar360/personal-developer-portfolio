@@ -14,7 +14,7 @@ import Marquee from '@/components/shared-components/ParralexText';
 
 const Home = () => {
   return (
-    <Container className='flex flex-col gap-[100px]'>
+    <Container className='flex flex-col gap-[30px] lg:gap-[100px]'>
 
       <Section>
         <HeroSection />
