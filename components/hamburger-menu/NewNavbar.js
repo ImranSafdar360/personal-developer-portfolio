@@ -18,10 +18,10 @@ const navLinks = [
   { title: 'Contact', link: 'contact' },
 ]
 const navLogos = [
-  { title: 'LinkedIn', logo: LinkedIn },
-  { title: 'Instagram', logo: Instagram },
-  { title: 'Facebook', logo: Facebook },
-  { title: 'Github', logo: Github },
+  { title: 'LinkedIn', logo: LinkedIn, link: '/' },
+  { title: 'Instagram', logo: Instagram, link: '/' },
+  { title: 'Facebook', logo: Facebook, link: '/' },
+  { title: 'Github', logo: Github, link: '/' },
 ]
 
 const Navbar = () => {
@@ -43,7 +43,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap font-antonSc text-whole-text text-[130px] leading-[120px]"
+      className="relative block overflow-hidden whitespace-nowrap font-antonSc text-whole-text text-[92px] leading-[92px] lg:text-[130px] lg:leading-[120px]"
     >
       <div>
         {children.split("").map((l, i) => (
@@ -192,16 +192,16 @@ const FlipLink = ({ children, href }) => {
   };
 
   return (
-    <nav className="w-full px-[60px] pt-[40px] fixed top-0 left-0 z-[999] flex justify-between items-start">
+    <nav className="w-full px-[20px] md:px-[40px] lg:px-[60px] pt-[40px] fixed top-0 left-0 z-[999] flex justify-between items-start">
       <div
         ref={containerRef}
         className={`${!isOpen ? 'text-whole-text' : 'text-whole-text'} focus:outline-none z-[999] cursor-pointer overflow-hidden`}
       >
-        <h1 className="anim-logo font-anton text-2xl whitespace-nowrap flex items-center gap-[3px] -translate-x-[29%] leading-[25px]">
-          <span className="h-[2px] w-[23px] bg-secondary-bg"></span>Imran
+        <h1 className="anim-logo font-anton text-[20px] lg:text-[24px] leading-[21px] whitespace-nowrap flex items-center gap-[3px] -translate-x-[29%] lg:leading-[25px]">
+          <span className="h-[2px] w-[18px] lg:w-[23px] bg-secondary-bg"></span>Imran
         </h1>
-        <h1 className="anim-Creation font-roboto text-2xl leading-[25px] font-extralight whitespace-nowrap flex items-center gap-[3px]">
-          <span className="h-[2px] w-[23px] bg-secondary-bg"></span>Devify
+        <h1 className="anim-Creation font-roboto text-[20px] leading-[21px] lg:text-[24px] lg:leading-[25px] font-extralight whitespace-nowrap flex items-center gap-[3px]">
+          <span className="h-[2px] w-[17px] lg:w-[23px] bg-secondary-bg"></span>Devify
         </h1>
       </div>
 
@@ -219,7 +219,7 @@ const FlipLink = ({ children, href }) => {
 
         <Magnet padding={50} disabled={false}>
           <button
-            className="w-[70px] h-[40px] rounded-full bg-secondary-bg flex justify-center items-center focus:outline-none z-[9999]"
+            className="w-[60px] h-[40px] lg:w-[70px] lg:h-[40px] rounded-full bg-secondary-bg flex justify-center items-center focus:outline-none z-[9999]"
             onClick={() => toggleOpen(!isOpen)}
           >
             <div className="flex flex-col space-y-1.5 items-center">
@@ -230,7 +230,7 @@ const FlipLink = ({ children, href }) => {
         </Magnet>
 
         <div
-          className="fixed left-0 top-[100px] flex items-start justify-between leading-[70px] bg-transparent px-[55px] pt-[50px]"
+          className="fixed left-0 top-[100px] flex flex-col lg:flex-row items-start justify-start lg:justify-between leading-[70px] bg-transparent px-[20px] md:[40px] lg:px-[55px] pt-[80px] lg:pt-[50px] gap-[30px]"
           ref={linkContainerRef}
           style={{
             width: "100vw",
@@ -250,9 +250,9 @@ const FlipLink = ({ children, href }) => {
               </div>
             ))}
           </div>
-          <div className='flex flex-col justify-center items-center gap-[10px] mr-[13px]'>
+          <div className='flex flex-row lg:flex-col justify-center items-center gap-[10px] mr-[13px]'>
             {navLogos.map((logo, index) => (
-              <a href="#" key={index}
+              <a href={logo.link} key={index}
               ref={(el) => (logoLinksRefs.current[index] = el)}
               style={{ opacity: 0, transform: "translateX(-50px)" }}
               >

@@ -76,16 +76,14 @@ export default function RootLayout({ children }) {
         position: "relative",
       }}
         className={inter.className}>
-        <div className="scroller-container">
+        <div className="scroller-container hidden md:block">
           <div className="scroller"></div>
         </div>
         <header>
           <Navbar />
         </header>
         <main className="bg-whole text-whole-text">{children}</main>
-        <footer>
           <Footer />
-        </footer>
       </body>
     </html>
   );
