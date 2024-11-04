@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/hamburger-menu/NewNavbar";
 import Footer from "@/components/footer-section/Footer";
+import useSmoothScroll from "./hooks/useSmoothScroll";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,6 +14,8 @@ export default function RootLayout({ children }) {
   const [isDragging, setIsDragging] = useState(false);
   const [startY, setStartY] = useState(0);
   const [startScrollTop, setStartScrollTop] = useState(0);
+
+  useSmoothScroll();
 
   useEffect(() => {
     const scroller = document.querySelector(".scroller");

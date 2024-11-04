@@ -23,32 +23,32 @@ const Footer = () => {
         </div>
         <div className='flex flex-col justify-start items-start gap-0 lg:gap-2'>
           <h3 className='text-[18px] lg:text-[24px] font-anton text-whole-text mb-1 lg:mb-3'>Social Links</h3>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
+          <Link href="https://www.linkedin.com/in/imran-safdar" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
             <LinkButton title='LinkedIn' />
           </Link>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
+          <Link href="https://www.instagram.com/code_crafter360/" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
             <LinkButton title='GitHub' />
           </Link>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
+          <Link href="https://web.facebook.com/ImranDevify360/" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
             <LinkButton title='Instagram' />
           </Link>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
+          <Link href="https://github.com/ImranSafdar360" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
             <LinkButton title='Facebook' />
           </Link>
         </div>
         <div className='flex flex-col justify-start items-start gap-0 lg:gap-2'>
           <h3 className='text-[18px] lg:text-[24px] font-anton text-whole-text mb-1 lg:mb-3'>Selected Work</h3>
           <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
-            <LinkButton title='Sit-down Social React-App' />
+            <LinkButton title='E-axon Saas Project' />
           </Link>
           <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
-            <LinkButton title='E-axon Saas Website' />
-          </Link>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
-            <LinkButton title='E-Commerce Store' />
+            <LinkButton title='Sit-down Project' />
           </Link>
           <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
             <LinkButton title='Modern Designer Portfolio' />
+          </Link>
+          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-secondary-text'>
+            <LinkButton title='Works Studio Project' />
           </Link>
         </div>
       </div>

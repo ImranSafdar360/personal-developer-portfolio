@@ -2,13 +2,15 @@
 import React from 'react'
 import Button from '../Button';
 import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa';
 
 const CallToAction = () => {
   return (
     <div className='w-full px-0 xl:px-[120px] flex flex-col justify-start items-start gap-6 lg:gap-16'>
       <div className='w-full flex justify-between items-center'>
         <h1 className='text-[40px] leading-[47px] lg:text-[85px] font-antonSc lg:leading-[92px]'>Let's Work <br />Together</h1>
-        <span className='text-[25px] lg:text-[42px] font-latoLight rotate-6'>↙</span>
+        <FaArrowRight className='text-[25px] lg:text-[42px] rotate-[135deg]' />
+
       </div>
       <div className='w-full h-[1px] bg-secondary-bg rounded-lg relative'>
         <Link href="/contact" className='w-[70px] h-[70px] lg:w-[150px] lg:h-[150px] absolute top-0 right-[10%] -translate-y-1/2 flex justify-center items-center rounded-full bg-secondary-bg text-solid-text text-[10px] lg:text-[17px] font-latoBold'>Get in Touch</Link>

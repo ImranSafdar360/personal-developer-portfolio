@@ -18,10 +18,10 @@ const navLinks = [
   { title: 'Contact', link: 'contact' },
 ]
 const navLogos = [
-  { title: 'LinkedIn', logo: LinkedIn, link: '/' },
-  { title: 'Instagram', logo: Instagram, link: '/' },
-  { title: 'Facebook', logo: Facebook, link: '/' },
-  { title: 'Github', logo: Github, link: '/' },
+  { title: 'LinkedIn', logo: LinkedIn, link: 'https://www.linkedin.com/in/imran-safdar' },
+  { title: 'Instagram', logo: Instagram, link: 'https://www.instagram.com/code_crafter360/' },
+  { title: 'Facebook', logo: Facebook, link: 'https://web.facebook.com/ImranDevify360/' },
+  { title: 'Github', logo: Github, link: 'https://github.com/ImranSafdar360' },
 ]
 
 const Navbar = () => {
@@ -253,6 +253,7 @@ const FlipLink = ({ children, href }) => {
           <div className='flex flex-row lg:flex-col justify-center items-center gap-[10px] mr-[13px]'>
             {navLogos.map((logo, index) => (
               <a href={logo.link} key={index}
+              target='_blank'
               ref={(el) => (logoLinksRefs.current[index] = el)}
               style={{ opacity: 0, transform: "translateX(-50px)" }}
               >
