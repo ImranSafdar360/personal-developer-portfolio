@@ -200,7 +200,7 @@ const FlipLink = ({ children, href }) => {
         <h1 className="anim-logo font-anton text-[20px] lg:text-[24px] leading-[21px] whitespace-nowrap flex items-center gap-[3px] -translate-x-[29%] lg:leading-[25px]">
           <span className="h-[2px] w-[18px] lg:w-[23px] bg-secondary-bg"></span>Imran
         </h1>
-        <h1 className="anim-Creation font-roboto text-[20px] leading-[21px] lg:text-[24px] lg:leading-[25px] font-extralight whitespace-nowrap flex items-center gap-[3px]">
+        <h1 className="anim-Creation font-robotoRegular text-[20px] leading-[21px] lg:text-[24px] lg:leading-[25px] font-extralight whitespace-nowrap flex items-center gap-[3px]">
           <span className="h-[2px] w-[17px] lg:w-[23px] bg-secondary-bg"></span>Devify
         </h1>
       </div>

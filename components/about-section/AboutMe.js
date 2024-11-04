@@ -12,25 +12,25 @@ const AboutMe = () => {
         <h1 className="text-[36px] md:text-[48px] lg:text-[64px] xl:text-[72px] leading-none font-antonSc text-whole-text mb-2">
           A little bit <br /> About me.
         </h1>
-        <p className="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-lato font-medium leading-relaxed text-secondary-text">
+        <p className="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-latoBold leading-relaxed text-secondary-text">
           I'm Imran Safdar, a front-end developer specializing in React & Next.js. I create next-gen digital experiences, blending functionality with striking animations. Passionate about modern web design, I aim to deliver creative and precise solutions in every project.
         </p>
       </div>
       <div className='w-full max-w-full lg:max-w-[50%] flex flex-col justify-end items-start gap-[40px] mt-0 lg:mt-[450px]'>
-        <p className='text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-roboto font-medium leading-[29px] text-whole-text text-center lg:text-start'>I Collaborate with Global Clients to Create Compelling and Immersive Digital Experiences Through Innovative Web Design and Development.</p>
+        <p className='text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-robotoRegular leading-[29px] text-whole-text text-center lg:text-start'>I Collaborate with Global Clients to Create Compelling and Immersive Digital Experiences Through Innovative Web Design and Development.</p>
         <div className='w-full flex flex-col lg:flex-row justify-start gap-[15px] lg:gap-[0px] xl:gap-[15px] items-center'>
           <SpotlightCard className='w-full lg:w-[50%] bg-none border-none' spotlightColor='rgba(255, 255, 255, 0.1)'>
           <div>
-          <h1 className="text-[48px] md:text-[60px] lg:text-[72px] font-roboto font-bold text-whole-text leading-tight">50+</h1>
+          <h1 className="text-[48px] md:text-[60px] lg:text-[72px] font-robotoBold text-whole-text leading-tight">50+</h1>
               <div className="w-full h-[2px] bg-secondary-bg my-4" />
-              <p className="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] leading-relaxed font-roboto font-medium text-whole-text">Completed Projects</p>
+              <p className="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] leading-relaxed font-robotoRegular text-whole-text">Completed Projects</p>
           </div>
           </SpotlightCard>
           <SpotlightCard className='w-full lg:w-[50%] bg-none border-none' spotlightColor='rgba(255, 255, 255, 0.1)'>
           <div>
-          <h1 className="text-[48px] md:text-[60px] lg:text-[72px] font-roboto font-bold text-whole-text leading-tight">6+</h1>
+          <h1 className="text-[48px] md:text-[60px] lg:text-[72px] font-robotoBold text-whole-text leading-tight">6+</h1>
               <div className="w-full h-[2px] bg-secondary-bg my-4" />
-              <p className="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] leading-relaxed font-roboto font-medium text-whole-text">Months of Experience</p>
+              <p className="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] leading-relaxed font-robotoRegular text-whole-text">Months of Experience</p>
           </div>
           </SpotlightCard>
         </div>
