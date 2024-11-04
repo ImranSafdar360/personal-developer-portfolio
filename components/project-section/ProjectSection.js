@@ -16,7 +16,7 @@ const ProjectSection = () => {
      <p className="text-[20px] md:text-[24px] font-anton text-yellow-400">My Work.</p>
      <h1 className="text-[36px] md:text-[48px] lg:text-[64px] xl:text-[72px] leading-none font-antonSc text-whole-text mb-2">Case studies</h1>
      </div>
-        <p className="w-full lg:w-[520px] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-lato font-medium leading-relaxed text-secondary-text">Building visionary projects with seamless, interactive features. Each project is a step forward in modern web development.</p>
+        <p className="w-full lg:w-[520px] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-latoRegular leading-relaxed text-secondary-text">Building visionary projects with seamless, interactive features. Each project is a step forward in modern web development.</p>
       </div>
       <SelectedWork projects={projects} limit={4} />
       <div className='w-full flex justify-start lg:justify-end items-center'>

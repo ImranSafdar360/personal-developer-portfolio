@@ -19,8 +19,13 @@ module.exports = {
       fontFamily: {
         antonSc: ['AntonSC'],
         anton: ['Anton'],
-        lato: ['Lato'], 
-        roboto: ['Roboto'], 
+        latoRegular: ['LatoRegular'],
+        latoLight: ['LatoLight'],
+        latoBold: ['LatoBold'], 
+        robotoRegular: ['RobotoRegular'],
+        robotoMedium: ['RobotoMedium'],
+        robotoBold: ['RobotoBold'],
+        robotoLight: ['RobotoLight'], 
       },
       borderColor: {
         "grey-border": '#484848',

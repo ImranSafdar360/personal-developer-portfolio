@@ -25,7 +25,7 @@ const SkillSection = () => {
   The Skillset Behind the Vision.
 </h1>
 
-        <p className='w-full md:w-[500px] lg:w-[800px] text-[20px] font-lato font-medium leading-[26px] text-secondary-text text-center'>Transforming ideas into reality with a dynamic blend of creativity and technical expertise, delivering innovative digital solutions that engage and inspire.</p>
+        <p className='w-full md:w-[500px] lg:w-[800px] text-[20px] font-latoRegular leading-[26px] text-secondary-text text-center'>Transforming ideas into reality with a dynamic blend of creativity and technical expertise, delivering innovative digital solutions that engage and inspire.</p>
       </div>
      <div className='w-full md:w-[70%] flex flex-wrap justify-center items-center gap-x-6 md:gap-x-10 gap-y-5'>
       {skills.map((logo, index) => (

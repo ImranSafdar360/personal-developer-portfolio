@@ -35,8 +35,8 @@ const BentoGrid = ({ images }) => {
         </div>
       ))}
        {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-          <div className="relative w-full max-w-5xl bg-whole">
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 ">
+          <div className="relative w-full max-w-5xl bg-whole rounded-[24px]">
             <img src={selectedImage} alt="Selected Project" className="w-full h-auto rounded-[24px] object-contain" />
             <button
               onClick={closeModal}

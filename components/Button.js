@@ -19,7 +19,7 @@ const Button = ({title, classes, email, subject, body, whatsappNumber, message, 
   };
   return (
     <StyledWrapper>
-      <button onClick={handleClick} className={`relative max-w-[280px] px-[25px] py-[10px] rounded-full border border-white-border font-roboto font-medium text-whole-text bg-whole overflow-hidden inline-block cursor-pointer z-[2] ${classes}`}>
+      <button onClick={handleClick} className={`relative max-w-[280px] px-[25px] py-[10px] rounded-full border border-white-border font-robotoRegular text-whole-text bg-whole overflow-hidden inline-block cursor-pointer z-[2] ${classes}`}>
         <span className="text relative z-[10]">{title}</span>
         <span className="w-full text-solid-text">{title}</span>
       </button>

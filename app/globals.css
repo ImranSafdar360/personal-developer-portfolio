@@ -13,18 +13,42 @@
 }
 
 @font-face {
-  font-family: Lato;
+  font-family: LatoRegular;
   src: url('../public/fonts/Lato/Lato-Regular.ttf');
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: LatoLight;
+  src: url('../public/fonts/Lato/Lato-Light.ttf');
+}
+
+
+@font-face {
+  font-family: LatoBold;
+  src: url('../public/fonts/Lato/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: RobotoRegular;
   src: url('../public/fonts/Roboto/Roboto-Regular.ttf');
 }
+
 @font-face {
-  font-family: Tanker;
-  src: url('../public/fonts/Tanker/Tanker-Regular.ttf');
+  font-family: RobotoMedium;
+  src: url('../public/fonts/Roboto/Roboto-Medium.ttf');
 }
+
+@font-face {
+  font-family: RobotoBold;
+  src: url('../public/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url('../public/fonts/Roboto/Roboto-Light.ttf');
+}
+
+
 
 body {
   color: white;
