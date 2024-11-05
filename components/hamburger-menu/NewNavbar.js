@@ -43,7 +43,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap font-antonSc text-whole-text text-[92px] leading-[92px] lg:text-[130px] lg:leading-[120px]"
+      className="relative block overflow-hidden whitespace-nowrap font-antonSc text-whole-text text-[58px] leading-[55px] md:text-[72px] md:leading-[67px] lg:text-[82px] lg:leading-[77px] xl:text-[100px] xl:leading-[96px]"
     >
       <div>
         {children.split("").map((l, i) => (
@@ -230,7 +230,7 @@ const FlipLink = ({ children, href }) => {
         </Magnet>
 
         <div
-          className="fixed left-0 top-[100px] flex flex-col lg:flex-row items-start justify-start lg:justify-between leading-[70px] bg-transparent px-[20px] md:[40px] lg:px-[55px] pt-[80px] lg:pt-[50px] gap-[30px]"
+          className="fixed left-0 top-[100px] flex flex-col lg:flex-row items-start justify-start lg:justify-between leading-[70px] bg-transparent px-[20px] md:[40px] lg:px-[55px] pt-[40px] lg:pt-[50px] gap-[30px]"
           ref={linkContainerRef}
           style={{
             width: "100vw",
@@ -257,7 +257,7 @@ const FlipLink = ({ children, href }) => {
               ref={(el) => (logoLinksRefs.current[index] = el)}
               style={{ opacity: 0, transform: "translateX(-50px)" }}
               >
-                <img src={logo.logo.src} alt={logo.title} className='w-[50px] h-[50px] object-cover' />
+                <img src={logo.logo.src} alt={logo.title} className='w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] object-cover' />
               </a>
             ))}
           </div>

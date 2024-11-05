@@ -8,6 +8,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
+    <>
    <Container className='flex flex-col gap-[80px]'>
 
     <Section className='pt-[120px] xl:pt-[80px] pb-0 lg:pb-[30px]'>
@@ -27,6 +28,7 @@ const Projects = () => {
       </Section>
 
    </Container>
+   </>
   )
 }
 

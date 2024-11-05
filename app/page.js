@@ -10,7 +10,7 @@ import ProjectSection from '@/components/project-section/ProjectSection';
 import SkillSection from '@/components/skill-section/SkillSection';
 import CallToAction from '@/components/footer-section/CallToAction';
 import ServiceSection from '@/components/service-section/ServiceSection';
-import Marquee from '@/components/shared-components/ParralexText';
+
 
 const Home = () => {
   return (
