@@ -9,7 +9,7 @@ const AboutMe = () => {
   return (
     <div className='w-full h-full flex flex-col lg:flex-row justify-between gap-[40px]'>
       <div className='w-full max-w-full lg:max-w-[50%] flex flex-col justify-start items-start gap-[8px]'>
-        <p className="text-[20px] md:text-[24px] font-anton text-yellow-400">Who I Am.</p>
+        <p className="text-[20px] md:text-[24px] font-anton text-yellow-400">Intro.</p>
         <h1 className="text-[36px] md:text-[48px] lg:text-[64px] xl:text-[72px] leading-none font-antonSc text-whole-text mb-2">
           A little bit <br /> About me.
         </h1>
