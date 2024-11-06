@@ -8,6 +8,7 @@ import Footer from "@/components/footer-section/Footer";
 import LocomotiveScroll from "locomotive-scroll";
 
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
