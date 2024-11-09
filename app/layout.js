@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/hamburger-menu/NewNavbar";
 import Footer from "@/components/footer-section/Footer";
-import LocomotiveScroll from "locomotive-scroll";
+import { ReactLenis } from 'lenis/react';
 
 
 
@@ -15,8 +15,6 @@ export default function RootLayout({ children }) {
   const [isDragging, setIsDragging] = useState(false);
   const [startY, setStartY] = useState(0);
   const [startScrollTop, setStartScrollTop] = useState(0);
-
-  const locomotiveScroll = new LocomotiveScroll();
 
 
   useEffect(() => {
@@ -90,6 +88,7 @@ export default function RootLayout({ children }) {
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
               <link rel="manifest" href="/site.webmanifest"></link>
             </head>
+            <ReactLenis root options={{autoRaf: true, lerp: 0.1, smoothWheel:true, wheelMultiplier: 0.8, autoResize:true}}>
             <body style={{
               position: "relative",
             }}
@@ -103,6 +102,7 @@ export default function RootLayout({ children }) {
               <main className="bg-whole text-whole-text">{children}</main>
               <Footer />
             </body>
+            </ReactLenis>
           </html>
           );
 }

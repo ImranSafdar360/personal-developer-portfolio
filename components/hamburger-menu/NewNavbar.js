@@ -13,9 +13,9 @@ import Github from '../../public/icons/github-icon.png'
 
 const navLinks = [
   { title: 'Home', link: '/' },
-  { title: 'About', link: 'about' },
-  { title: 'Projects', link: 'projects' },
-  { title: 'Contact', link: 'contact' },
+  { title: 'About', link: '/about' },
+  { title: 'Projects', link: '/projects' },
+  { title: 'Contact', link: '/contact' },
 ]
 const navLogos = [
   { title: 'LinkedIn', logo: LinkedIn, link: 'https://www.linkedin.com/in/imran-safdar' },
