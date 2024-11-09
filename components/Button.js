@@ -2,23 +2,6 @@ import React from "react";
 import './Button.css'
 
 const Button = ({ title, classes, email, subject, body, whatsappNumber, message, }) => {
-  // const openEmailPopup = (email, subject, body) => {
-  //   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  //   window.location.href = mailtoLink;
-  // };
-  // const openWhatsApp = (number, message) => {
-  //   const whatsappLink = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
-  //   window.open(whatsappLink, "_blank");
-  // };
-  // const handleClick = () => {
-  //   if (email) {
-  //     openEmailPopup(email, subject, body);
-  //   } else if (whatsappNumber) {
-  //     openWhatsApp(whatsappNumber, message);
-  //   } else {
-  //     console.error("No action defined for the button.");
-  //   }
-  // };
 
   const handleClick = () => {
     if (typeof window === "undefined") return; // Check for the window object

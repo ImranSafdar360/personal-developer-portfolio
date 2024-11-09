@@ -23,7 +23,7 @@ const About = () => {
         </Section>
 
         <Section className='pt-0 md:pt-[30px]'>
-          <HeroImage />
+          <HeroImage heroImage={`/images/about-hero.webp`} />
         </Section>
 
         <Section className='w-full flex justify-center items-center'>
@@ -40,7 +40,7 @@ const About = () => {
             <div className="w-full lg:w-[40%] xl:w-[30%] flex justify-center">
               <div className="w-[90%] h-[300px] md:h-[400px] rounded-[30px] overflow-hidden shadow-lg">
                 <img
-                  src="https://via.placeholder.com/300"
+                  src="/images/about-photo.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
