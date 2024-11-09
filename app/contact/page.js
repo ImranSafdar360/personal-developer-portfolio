@@ -23,7 +23,7 @@ const style = {
 
 
 const Contact = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const [name, setName] = useState('');
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -44,13 +44,12 @@ const Contact = () => {
           'template_wjs9t8l',
           {
             to_email: data.email,
-            user_name: data.fullName
+            user_name: data.fullName,
           },
           'LTsFRZN5uNb9-Y_FF'
         )
           .then(() => {
             handleOpen();
-            setName(user_name);
             reset();
           })
           .catch((error) => {
@@ -167,8 +166,9 @@ const Contact = () => {
           onClose={handleClose}
           aria-labelledby="keep-mounted-modal-title"
           aria-describedby="keep-mounted-modal-description"
+          sx={{ zIndex: '20' }}
         >
-          <div className='w-[90%] md:max-w-[600px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-whole p-8 rounded-xl flex flex-col justify-center items-center gap-5 border border-white' sx={style}>
+          <div className='w-full h-[100vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-whole p-8 flex flex-col justify-center items-center gap-5 z-20' sx={style}>
             <h1 className="text-[36px] md:text-[48px] lg:text-[64px] xl:text-[72px] leading-none font-antonSc text-whole-text text-center">Thank You! <br />{name}</h1>
             <p className="w-full lg:w-[520px] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-latoRegular leading-tight text-secondary-text text-center">Your message has been sent successfully. We will get back to you shortly.</p>
             <Link href="/">

@@ -38,17 +38,17 @@ const Footer = () => {
         </div>
         <div className='flex flex-col justify-start items-start gap-0 lg:gap-2'>
           <h3 className='text-[18px] lg:text-[24px] font-anton text-whole-text mb-1 lg:mb-3'>Selected Work</h3>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+          <Link href={`/projects/panelist`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+            <LinkButton title='Panelist.com' />
+          </Link>
+          <Link href={`/projects/sitdown-members`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+            <LinkButton title='Sit-down Members' />
+          </Link>
+          <Link href={`/projects/e-axon`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
             <LinkButton title='E-axon Saas Project' />
           </Link>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
-            <LinkButton title='Sit-down Project' />
-          </Link>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
-            <LinkButton title='Modern Designer Portfolio' />
-          </Link>
-          <Link href="/" className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
-            <LinkButton title='Works Studio Project' />
+          <Link href={`/projects/imran-devify`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+            <LinkButton title='ImranDevify Portfolio' />
           </Link>
         </div>
       </div>

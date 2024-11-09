@@ -8,7 +8,7 @@ export default function ProjectDetails({ params }) {
   const project = projects.find((project) => project.id === id);
 
   if (!project) {
-    notFound(); // Render 404 page if project is not found
+    notFound();
   }
 
 
@@ -20,9 +20,8 @@ export default function ProjectDetails({ params }) {
   );
 }
 
-// Use this to generate static params for dynamic routing
 export async function generateStaticParams() {
   return projects.map((project) => ({
-    id: project.id, // Generates static paths like /projects/1, /projects/2, etc.
+    id: project.id,
   }));
 }
