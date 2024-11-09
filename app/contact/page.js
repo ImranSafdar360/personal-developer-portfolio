@@ -168,7 +168,7 @@ const Contact = () => {
           sx={{ zIndex: '20' }}
         >
           <div className='w-full h-[100vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-whole p-8 flex flex-col justify-center items-center gap-5 z-20' sx={style}>
-            <h1 className="text-[36px] md:text-[48px] lg:text-[64px] xl:text-[72px] leading-none font-antonSc text-whole-text text-center">Thank You! <br />{name}</h1>
+            <h1 className="text-[36px] md:text-[48px] lg:text-[64px] xl:text-[72px] leading-none font-antonSc text-whole-text text-center">Thank You!</h1>
             <p className="w-full lg:w-[520px] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-latoRegular leading-tight text-secondary-text text-center">Your message has been sent successfully. We will get back to you shortly.</p>
             <Link href="/">
               <Button title="Back to Home" classes="px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-4 text-[14px] md:text-[16px] lg:text-[18px]" />
