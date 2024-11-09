@@ -23,7 +23,7 @@ export default function SelectedWork({ projects, limit }) {
               </div>
               <div className="w-full lg:w-[45%] p-[4px] md:px-[8px] lg:px-[12px]">
                <div className={`flex flex-col justify-center items-start gap-[15px] ${index % 2 === 0 ? 'lg:pl-[75px]' : 'lg:pr-[75px] lg:pl-[0px]'}`}>
-               <p className="py-2 px-4 bg-yellow-400 text-yellow-900 rounded-full text-[14px] md:text-[16px] font-latoRegular mt-4">{project.tag}</p>
+               <p className="py-2 px-4 bg-yellow-400 text-yellow-900 rounded-full text-[14px] md:text-[16px] font-latoBold mt-4">{project.date}</p>
                 <Link  href={`/projects/${project.id}`} className="text-[24px] md:text-[28px] lg:text-[36px] font-anton text-whole-text hover:text-secondary-text transition-all line-clamp-2 leading-tight">{project.title}</Link>
                 <p className="text-[16px] md:text-[18px] font-robotoRegular text-secondary-text line-clamp-3 leading-relaxed">{project.description}</p>
                 <Link className="text-[16px] md:text-[18px] font-robotoRegular underline text-yellow-400" href={`/projects/${project.id}`}>

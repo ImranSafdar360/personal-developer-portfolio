@@ -18,7 +18,7 @@ const Home = () => {
 
       <Section>
         <HeroSection />
-        <HeroImage />
+        <HeroImage heroImage={`/images/about-hero.webp`} />
       </Section>
 
       <Section>

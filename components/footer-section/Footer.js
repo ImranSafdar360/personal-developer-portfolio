@@ -26,19 +26,19 @@ const Footer = () => {
           <Link href="https://www.linkedin.com/in/imran-safdar" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
             <LinkButton title='LinkedIn' />
           </Link>
-          <Link href="https://www.instagram.com/code_crafter360/" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+          <Link href="https://github.com/ImranSafdar360" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
             <LinkButton title='GitHub' />
           </Link>
-          <Link href="https://web.facebook.com/ImranDevify360/" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+          <Link href="https://www.instagram.com/code_crafter360/" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
             <LinkButton title='Instagram' />
           </Link>
-          <Link href="https://github.com/ImranSafdar360" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+          <Link href="https://web.facebook.com/ImranDevify360/" target='_blank' className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
             <LinkButton title='Facebook' />
           </Link>
         </div>
         <div className='flex flex-col justify-start items-start gap-0 lg:gap-2'>
           <h3 className='text-[18px] lg:text-[24px] font-anton text-whole-text mb-1 lg:mb-3'>Selected Work</h3>
-          <Link href={`/projects/panelist`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+          <Link href={`/projects/react-panelist`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
             <LinkButton title='Panelist.com' />
           </Link>
           <Link href={`/projects/sitdown-members`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
@@ -47,8 +47,8 @@ const Footer = () => {
           <Link href={`/projects/e-axon`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
             <LinkButton title='E-axon Saas Project' />
           </Link>
-          <Link href={`/projects/imran-devify`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
-            <LinkButton title='ImranDevify Portfolio' />
+          <Link href={`/projects/abdullah-designs`} className='text-[12px] lg:text-[18px] font-latoRegular text-whole-text'>
+            <LinkButton title='Abdullah Designs Portfolio' />
           </Link>
         </div>
       </div>

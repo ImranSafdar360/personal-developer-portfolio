@@ -23,7 +23,7 @@ export default function SuggestedProjects({ projects, limit }) {
               </div>
               </Link>
               <div className="w-full flex flex-col gap-[10px] lg:gap-[15px] p-[4px] md:px-[8px] lg:px-[12px]">
-              <Link href={`/projects/${project.id}`} className="text-[24px] md:text-[28px] lg:text-[36px] font-anton text-whole-text hover:text-secondary-text transition-all line-clamp-2 leading-tight">{project.title}</Link>
+              <Link href={`/projects/${project.id}`} className="text-[24px] md:text-[28px] lg:text-[36px] font-anton text-whole-text hover:text-secondary-text transition-all line-clamp-1 leading-tight">{project.title}</Link>
               <p className="text-[16px] md:text-[18px] font-robotoRegular text-secondary-text line-clamp-3 leading-relaxed">{project.description}</p>
               <Link className="text-[16px] md:text-[18px] font-robotoRegular underline text-yellow-400" href={`/projects/${project.id}`}>
                   Check Full Case Study

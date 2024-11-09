@@ -79,9 +79,11 @@ const ProjectDetail = ({ project }) => {
             <a target='_blank' href={project.liveLink} className="flex items-center gap-2">
               <Button title="View Live Project" classes="px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 text-[14px] md:text-[16px] lg:text-[18px]" />
             </a>
-            <a target='_blank' href={project.sourceCode} className="flex items-center gap-2">
+            { project.sourceCode && (
+              <a target='_blank' href={project.sourceCode} className="flex items-center gap-2">
               <Button title="View Source Code" classes="px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 text-[14px] md:text-[16px] lg:text-[18px]" />
             </a>
+            )}
           </div>
         </motion.section>
       </main>
