@@ -48,7 +48,10 @@
   src: url('../public/fonts/Roboto/Roboto-Light.ttf');
 }
 
-
+*::selection{
+  background-color: #EEEEEE;
+  color: #111111;
+}
 
 body {
   color: white;

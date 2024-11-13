@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/hamburger-menu/NewNavbar";
 import Footer from "@/components/footer-section/Footer";
 import { ReactLenis } from 'lenis/react';
+import CustomCursor from "@/components/CustomCursor";
 
 
 
@@ -96,6 +97,7 @@ export default function RootLayout({ children }) {
               <div className="scroller-container hidden md:block">
                 <div className="scroller"></div>
               </div>
+              <CustomCursor />
               <header>
                 <Navbar />
               </header>
