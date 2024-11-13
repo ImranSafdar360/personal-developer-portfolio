@@ -193,6 +193,7 @@ const FlipLink = ({ children, href }) => {
 
   return (
     <nav className="w-full px-[20px] md:px-[40px] lg:px-[60px] pt-[40px] fixed top-0 left-0 z-[999] flex justify-between items-start">
+      <Link href='/'>
       <div
         ref={containerRef}
         className={`${!isOpen ? 'text-whole-text' : 'text-whole-text'} focus:outline-none z-[999] cursor-pointer overflow-hidden`}
@@ -204,6 +205,7 @@ const FlipLink = ({ children, href }) => {
           <span className="h-[2px] w-[17px] lg:w-[23px] bg-secondary-bg"></span>Devify
         </h1>
       </div>
+      </Link>
 
       <div className="flex justify-center items-center relative">
         <div
@@ -217,8 +219,9 @@ const FlipLink = ({ children, href }) => {
           }}
         ></div>
 
-        <Magnet padding={50} disabled={false}>
+        {/* <Magnet padding={50} disabled={false}> */}
           <button
+          id='make-magnet'
             className="w-[60px] h-[40px] lg:w-[70px] lg:h-[40px] rounded-full bg-secondary-bg flex justify-center items-center focus:outline-none z-[9999]"
             onClick={() => toggleOpen(!isOpen)}
           >
@@ -227,7 +230,7 @@ const FlipLink = ({ children, href }) => {
               <span ref={bottomLineRef} className="block w-[25px] h-[2px] rounded-full bg-whole" />
             </div>
           </button>
-        </Magnet>
+        {/* </Magnet> */}
 
         <div
           className="fixed left-0 top-[100px] flex flex-col lg:flex-row items-start justify-start lg:justify-between leading-[70px] bg-transparent px-[20px] md:[40px] lg:px-[55px] pt-[40px] lg:pt-[50px] gap-[30px]"

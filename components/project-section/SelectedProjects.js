@@ -11,8 +11,8 @@ export default function SelectedWork({ projects, limit }) {
               key={project.id}
               className={`w-full min-h-[400px] rounded-2xl overflow-hidden flex flex-col justify-between items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
             >
-              <div className="w-full lg:w-[55%] h-[250px] md:h-[350px] lg:h-[430px] object-cover rounded-[30px] overflow-hidden ">
-              <Link href={`/projects/${project.id}`}>
+              <div className="w-full lg:w-[55%] h-[250px] md:h-[350px] lg:h-[430px] object-cover rounded-[30px] overflow-hidden">
+              <Link href={`/projects/${project.id}`} className="w-full h-full" >
                 <img
                   src={project.image}
                   alt={project.title}

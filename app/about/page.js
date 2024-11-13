@@ -49,8 +49,8 @@ const About = () => {
 
             {/* Right Section: Description */}
             <div className="w-full lg:w-[50%] flex flex-col items-center lg:items-start gap-[30px]">
-              <h1 className="text-[20px] md:text-[22px] lg:text-[28px] font-robotoLight leading-[24px] md:leading-[28px] lg:leading-[32px] text-secondary-text text-center lg:text-start">
-                Imran Safdar - <span className='text-whole-text font-robotoBold'>Frontend developer</span> specialized in <span className='text-whole-text font-robotoBold'>React</span> & <span className='text-whole-text font-robotoBold'>Next.js</span>. I create next-gen digital experiences, blending <span className='text-whole-text font-robotoBold'>functionality</span> into striking <span className='text-whole-text font-robotoBold'>animations</span>. Passionate about modern web <span className='text-whole-text font-robotoBold'>design</span>, I always try to deliver creative and precise solutions in every project.
+              <h1 className="text-[20px] md:text-[22px] lg:text-[28px] font-robotoRegular leading-[24px] md:leading-[28px] lg:leading-[32px] text-secondary-text text-center lg:text-start">
+                Imran Safdar - <span className='text-whole-text font-robotoMedium'>Frontend developer</span> specialized in <span className='text-whole-text font-robotoMedium'>React</span> & <span className='text-whole-text font-robotoMedium'>Next.js</span>. I create next-gen digital experiences, blending <span className='text-whole-text font-robotoMedium'>functionality</span> into striking <span className='text-whole-text font-robotoMedium'>animations</span>. Passionate about modern web <span className='text-whole-text font-robotoMedium'>design</span>, I always try to deliver creative and precise solutions in every project.
               </h1>
               <Link href='/contact'>
                 <Button title='Get in Touch' classes="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-[12px] md:text-[14px] lg:text-[16px]" />

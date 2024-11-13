@@ -22,7 +22,7 @@ const BentoGrid = ({ images }) => {
         <div
         onClick={() => openModal(image)}
           key={index}
-          className={`relative text-white rounded-[30px] cursor-pointer overflow-hidden
+          className={`text-white rounded-[30px] cursor-pointer overflow-hidden
             ${index === 0 ? "md:col-span-2 md:row-span-1" : ""}
             ${index === 3 ? "md:col-span-2 md:row-span-1" : ""}
           `}
@@ -35,12 +35,12 @@ const BentoGrid = ({ images }) => {
         </div>
       ))}
        {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 ">
+        <div className="absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 ">
           <div className="relative w-full max-w-5xl bg-whole rounded-[24px]">
-            <img src={selectedImage} alt="Selected Project" className="w-full h-auto rounded-[24px] object-contain" />
+            <img src={selectedImage} alt="Selected Project" className="w-full h-[600px] rounded-[24px] object-contain" />
             <button
               onClick={closeModal}
-              className="absolute top-5 right-5 text-whole-text text-[40px] leading-[1px] font-anton w-[40px] h-[40px] rounded-full bg-whole bg-opacity-50 hover:bg-opacity-70 transition duration-300"
+              className="absolute top-7 right-5 text-whole-text text-[50px] leading-[1px] font-anton w-[40px]"
             >
               &times;
             </button>

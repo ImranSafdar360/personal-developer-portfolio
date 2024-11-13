@@ -6,7 +6,7 @@ const projects = [
     title: 'React Panelist',
     tagline: 'A Comprehensive Panel Management System for Efficient User Interaction',
     description: 'React Panelist is a user-friendly panel management tool built with React. Designed for performance and scalability, this web application provides an intuitive interface for managing users, viewing analytics, and customizing content. With a modern, sleek design, React Panelist allows for easy integration and efficient communication, making it ideal for any organization looking to enhance user engagement and manage panel data seamlessly.',
-     image: '/images/Hero-Sections-Mockup-Images/cynthia.jpg',
+     image: '/images/Hero-Sections-Mockup-Images/panelist.jpg',
     technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Redux toolkit', 'API Integeration'],
     features: [
       'User Management: Seamlessly manage user roles and permissions.',
@@ -14,9 +14,10 @@ const projects = [
       'Customizable Layouts: Flexibility to adjust the interface to your specific needs.',
     ],
     images: [
-      '/images/panelist-project1.jpg',
-      '/images/panelist-project2.jpg',
-      '/images/panelist-project3.jpg',
+      '/images/bento-images/panelist/first-image.jpg',
+      '/images/bento-images/panelist/second-image.jpg',
+      '/images/bento-images/panelist/third-image.jpg',
+      '/images/bento-images/panelist/forth-image.jpg',
     ],
     liveLink: 'https://react.panelist.com/home',
   },  
@@ -34,9 +35,10 @@ const projects = [
       'High Performance: Fast loading times and seamless user experience.'
     ],
     images: [
-      '/images/e-axon-screenshot1.jpg',
-      '/images/e-axon-screenshot2.jpg',
-      '/images/e-axon-screenshot3.jpg',
+     '/images/bento-images/e-axon/first-image.jpg',
+      '/images/bento-images/e-axon/second-image.jpg',
+      '/images/bento-images/e-axon/third-image.jpg',
+      '/images/bento-images/e-axon/forth-image.jpg',
     ],
     liveLink: 'https://e-axon-website.vercel.app/',
     sourceCode: 'https://github.com/ImranSafdar360/e-axon-client-project',
@@ -55,12 +57,13 @@ const projects = [
       'Responsive Layout: Optimized for various devices and screen sizes.'
     ],
     images: [
-      '/images/sitdown-screenshot1.jpg',
-      '/images/sitdown-screenshot2.jpg',
-      '/images/sitdown-screenshot3.jpg',
+      '/images/bento-images/sitdown/first-image.jpg',
+      '/images/bento-images/sitdown/second-image.jpg',
+      '/images/bento-images/sitdown/third-image.jpg',
+      '/images/bento-images/sitdown/forth-image.jpg',
     ],
     liveLink: 'https://sitdown-members.vercel.app/',
-    sourceCode: 'https://github.com/ImranSafdar360/sitdown-members-project',
+    // sourceCode: 'https://github.com/ImranSafdar360/sitdown-members-project',
   },    
   {
     id: 'abdullah-designs',
@@ -68,7 +71,7 @@ const projects = [
     title: 'Abdullah Designs Portfolio',
     tagline: 'Showcasing Creative Excellence in Graphic Design',
     description: 'Abdullah Designs is a stunning graphic design portfolio that reflects a unique artistic vision. The website combines a sleek, modern layout with vibrant visuals, showcasing a diverse range of design projects. With an emphasis on user experience, this site allows visitors to navigate seamlessly through the portfolio, experiencing each pieces intricate details and creative concepts. The portfolio not only highlights the aesthetic appeal of the designs but also emphasizes the strategic approach to branding and visual storytelling.',
-    image: '/images/Hero-Sections-Mockup-Images/abhishek.jpg',
+    image: '/images/Hero-Sections-Mockup-Images/abdullah.jpg',
     technologies: ['React.js', 'JavaScript', 'Tailwind CSS', 'GSAP', 'Locomotive'],
     features: [
       'Elegant Design: A modern and minimalistic interface that highlights your work without distractions.',
@@ -76,10 +79,10 @@ const projects = [
       'Diverse Portfolio: Features various design projects, demonstrating versatility and expertise in different styles and mediums.',
     ],
     images: [
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
+     '/images/bento-images/abdullah/first-image.jpg',
+      '/images/bento-images/abdullah/second-image.jpg',
+      '/images/bento-images/abdullah/third-image.jpg',
+      '/images/bento-images/abdullah/forth-image.jpg',
     ],
     liveLink: 'www.abdullahdesigns.com',
     sourceCode: 'https://github.com/ImranSafdar360/abdullah-portfolio',
@@ -98,9 +101,10 @@ const projects = [
       'Showcases a range of projects and services'
     ],
     images: [
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg'
+      '/images/bento-images/imran/first-image.jpg',
+      '/images/bento-images/imran/second-image.jpg',
+      '/images/bento-images/imran/third-image.jpg',
+      '/images/bento-images/imran/forth-image.jpg',
     ],
     liveLink: 'https://imrandevify.vercel.app/',
     sourceCode: 'https://github.com/ImranSafdar360/personal-developer-portfolio'
@@ -111,7 +115,7 @@ const projects = [
     title: 'OCHI Website',
     tagline: 'A Captivating Online Experience for Health and Wellness',
     description: 'The OCHI website serves as a vibrant and engaging platform dedicated to promoting health and wellness. With a modern design and intuitive navigation, this website effectively showcases various wellness services and resources. The focus on user experience ensures that visitors can easily access information and connect with the brand. Rich visuals and compelling content come together to create an inviting atmosphere that resonates with users seeking health solutions.',
-     image: '/images/Hero-Sections-Mockup-Images/cynthia.jpg',
+     image: '/images/Hero-Sections-Mockup-Images/ochi.jpg',
     technologies: ['React.js', 'JavaScript', 'Tailwind CSS', 'GSAP', 'Locomotive'],
     features: [
       'Dynamic Layout: A visually appealing design that captures attention while providing essential information.',
@@ -119,13 +123,36 @@ const projects = [
       'Resourceful Content: Engaging and informative resources that promote wellness and healthy living.',
     ],
     images: [
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
+      '/images/bento-images/ochi/first-image.jpg',
+      '/images/bento-images/ochi/second-image.jpg',
+      '/images/bento-images/ochi/third-image.jpg',
+      '/images/bento-images/ochi/forth-image.jpg',,
     ],
     liveLink: 'https://ochi-website-project.netlify.app/',
     sourceCode: 'https://github.com/ImranSafdar360/ochi-website-project',
   },
+  {
+    id: 'significo-website-clone',
+    date: '2023',
+    title: 'Significo Website Clone',
+    tagline: 'A Precise Clone of Significo Website with Enhanced UI Design',
+    description: 'The Significo Website Clone replicates the original website with a focus on responsive design and clean UI. Built using HTML, CSS, and JavaScript, the clone ensures seamless navigation and modern aesthetics. It’s a perfect project for demonstrating website cloning skills, with attention to detail on layout and interactive elements.',
+    image: '/images/Hero-Sections-Mockup-Images/significo.jpg',
+    technologies: ['HTML', 'Tailwind CSS', 'JavaScript', 'GSAP', 'Locomotive'],
+    features: [
+      'Clean and Modern UI: A sleek design layout that mirrors the original website’s functionality.',
+      'Responsive: Fully functional across various screen sizes and devices.',
+      'Interactive Elements: Smooth interactions designed to enhance user experience.'
+    ],
+    images: [
+     '/images/bento-images/significo/first-image.jpg',
+      '/images/bento-images/significo/second-image.jpg',
+      '/images/bento-images/significo/third-image.jpg',
+      '/images/bento-images/significo/forth-image.jpg',
+    ],
+    liveLink: 'https://imransafdar360.github.io/Significo-Website-Clone/',
+    sourceCode: 'https://github.com/ImranSafdar360/Significo-Website-Clone'
+  },  
   {
     id: 'tarar-agriculture-website',
     date: '2024',
@@ -140,9 +167,10 @@ const projects = [
       'Educational Resources: Provides insights into sustainable farming practices and the importance of soil testing.',
     ],
     images: [
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
+      '/images/bento-images/tarrar/first-image.jpg',
+      '/images/bento-images/tarrar/second-image.jpg',
+      '/images/bento-images/tarrar/third-image.jpg',
+      '/images/bento-images/tarrar/forth-image.jpg',,
     ],
     liveLink: 'https://agriculture-website-work.netlify.app/',
     sourceCode: 'https://github.com/ImranSafdar360/Agriculture-Website-Project',
@@ -161,9 +189,10 @@ const projects = [
       'Fast Performance: Built for speed with optimized loading times and minimal resource consumption.',
     ],
     images: [
-      '/images/miranda-project1.jpg',
-      '/images/miranda-project2.jpg',
-      '/images/miranda-project3.jpg',
+      '/images/bento-images/miranda/first-image.jpg',
+      '/images/bento-images/miranda/second-image.jpg',
+      '/images/bento-images/miranda/third-image.jpg',
+      '/images/bento-images/miranda/forth-image.jpg',
     ],
     liveLink: 'https://miranda-project-website.netlify.app/',
     sourceCode: 'https://github.com/ImranSafdar360/Miranda-Project-Website',
@@ -182,9 +211,10 @@ const projects = [
       'Fast and Efficient: Optimized for fast loading times and smooth user interaction.',
     ],
     images: [
-      '/images/cynthia-ugwu1.jpg',
-      '/images/cynthia-ugwu2.jpg',
-      '/images/cynthia-ugwu3.jpg',
+      '/images/bento-images/cynthia/first-image.jpg',
+      '/images/bento-images/cynthia/second-image.jpg',
+      '/images/bento-images/cynthia/third-image.jpg',
+      '/images/bento-images/cynthia/forth-image.jpg',
     ],
     liveLink: 'https://cynthia-ugwu-project.netlify.app/',
     sourceCode: 'https://github.com/ImranSafdar360/Cynthia-ugwu-website',
@@ -203,9 +233,10 @@ const projects = [
       'Collaborative Approach: Emphasizes the studios focus on working closely with clients to achieve their vision.',
     ],
     images: [
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
+      '/images/bento-images/works/first-image.jpg',
+      '/images/bento-images/works/second-image.jpg',
+      '/images/bento-images/works/third-image.jpg',
+      '/images/bento-images/works/forth-image.jpg',
     ],
     liveLink: 'https://works-studio-project.netlify.app/',
     sourceCode: 'https://github.com/ImranSafdar360/Works.studio-Project',
@@ -224,35 +255,80 @@ const projects = [
       'Contact and Engagement: Easy-to-use contact options for potential clients to discuss projects and collaborations.',
     ],
     images: [
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
+      '/images/bento-images/abhishake/first-image.jpg',
+      '/images/bento-images/abhishake/second-image.jpg',
+      '/images/bento-images/abhishake/third-image.jpg',
+      '/images/bento-images/abhishake/forth-image.jpg',,
     ],
     liveLink: 'https://protfolio-website-project.netlify.app/',
     sourceCode: 'https://github.com/ImranSafdar360/Portfolio-Website-Project',
   },
   {
-    id: 'sidcup-family-golf',
+    id: 'modern-landing-page-sheryjs',
     date: '2023',
-    title: 'Sidcup Family Golf',
-    tagline: 'Experience Golf Like Never Before',
-    description: 'The Sidcup Family Golf website showcases an exciting venue featuring a Toptracer driving range, adventure golf, and professional golf lessons. Designed to make golf accessible and enjoyable for all, the site highlights the venues unique offerings, including two outdoor dinosaur-themed crazy golf courses. With a focus on family fun and quality time, the site effectively communicates the vibrant atmosphere and various activities available at the location.',
-     image: '/images/Hero-Sections-Mockup-Images/sidcup.jpg',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Locomotive'],
+    title: 'Modern Landing Page with Shery.js',
+    tagline: 'Engaging, Smooth-Scrolling Landing Page Built with Shery.js',
+    description: 'This Modern Landing Page project showcases an attractive, smooth-scrolling experience designed with Shery.js, optimized for engagement and aesthetic appeal. The website features dynamic animations and a streamlined layout, providing an intuitive and immersive user experience. Perfect for businesses and creatives seeking a visually appealing web presence.',
+    image: '/images/Hero-Sections-Mockup-Images/shery.jpg',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Shery.js'],
     features: [
-      'Toptracer Technology: A state-of-the-art driving range providing an engaging experience for golfers of all skill levels.',
-      'Family-Friendly Adventure Golf: Offers a whimsical journey through a dinosaur-themed course, perfect for families and kids.',
-      'Expert Golf Lessons: Dedicated professionals help improve your game, ensuring every participant gains confidence and skill.',
+      'Smooth Animations: Enhanced scrolling and transitions for a captivating user experience.',
+      'Responsive Layout: Designed to look great on all screen sizes.',
+      'Modern Design: Clean and stylish layout suitable for a variety of professional uses.'
     ],
     images: [
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
-      '/images/hero-dummy-image.jpg',
+      '/images/bento-images/sheryjs/first-image.jpg',
+      '/images/bento-images/sheryjs/second-image.jpg',
+      '/images/bento-images/sheryjs/third-image.jpg',
+      '/images/bento-images/sheryjs/forth-image.jpg',
     ],
-    liveLink: 'https://sidcup-family-golf-website-project.netlify.app/',
-    sourceCode: 'https://github.com/ImranSafdar360/Sidcup-Family-Golf-Website-project',
+    liveLink: 'https://modern-landing-page-sheryjs.netlify.app/',
+    sourceCode: 'https://github.com/ImranSafdar360/Custom-Website-Shery.js-Project'
   },
-  
+  {
+    id: 'nexcent-website-project',
+    date: '2024',
+    title: 'Nexcent Solutions',
+    tagline: 'Innovative Tech Solutions for Modern Business Challenges',
+    description: 'The Nexcent Solutions website showcases a cutting-edge platform designed for businesses seeking technology-driven solutions. With a sleek, modern design, the site offers an intuitive navigation experience and highlights Nexcent’s expertise in providing scalable solutions tailored to meet industry demands. The site features seamless responsiveness across devices, optimized load times, and an engaging user interface, ensuring an impactful experience for all visitors.',
+    image: '/images/Hero-Sections-Mockup-Images/nexcent.jpg',
+    technologies: ['React.js', 'Next.js', 'JavaScript', 'Tailwind CSS'],
+    features: [
+      'Modern Interface: A clean, professional look tailored for tech-focused audiences.',
+      'Responsive Design: Optimized for all device sizes, ensuring accessibility and engagement.',
+      'High Performance: Streamlined for fast load times and efficient browsing experience.'
+    ],
+    images: [
+      '/images/bento-images/nexcent/first-image.jpg',
+      '/images/bento-images/nexcent/second-image.jpg',
+      '/images/bento-images/nexcent/third-image.jpg',
+      '/images/bento-images/nexcent/forth-image.jpg',
+    ],
+    liveLink: 'https://nexcent-website-project.netlify.app/',
+    sourceCode: 'https://github.com/ImranSafdar360/TSK-000-45'
+  },
+  {
+    "id": "custom-ecommerce-website",
+    "date": "2024",
+    "title": "Custom E-commerce Website",
+    "tagline": "A Fully Custom-Built E-commerce Platform with Modern Design",
+    "description": "This custom E-commerce Website is a unique creation developed to provide an intuitive and engaging shopping experience. Designed and built from scratch using HTML, CSS, and JavaScript, it features a modern UI that emphasizes ease of navigation and responsive design. This project showcases skills in front-end development and interactive design, tailored to deliver a seamless online shopping experience.",
+    image: '/images/Hero-Sections-Mockup-Images/ecommerce.jpg',
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "features": [
+      "Custom Design: A unique layout focused on visual appeal and usability.",
+      "Fully Responsive: Optimized for different screen sizes and devices.",
+      "Interactive Shopping Elements: Engaging product displays, shopping cart functionality, and smooth navigation."
+    ],
+    "images": [
+      '/images/bento-images/ecommrce/first-image.jpg',
+      '/images/bento-images/ecommrce/second-image.jpg',
+      '/images/bento-images/ecommrce/third-image.jpg',
+      '/images/bento-images/ecommrce/forth-image.jpg',
+    ],
+    "liveLink": "https://ecommerce-website-using-html-css-js.netlify.app/",
+    "sourceCode": "https://github.com/ImranSafdar360/Ecommerce-Website-using-HTML-CSS-JS"
+  }    
 ];
 
 export default projects;
