@@ -40,7 +40,7 @@ const projects = [
       '/images/bento-images/e-axon/third-image.jpg',
       '/images/bento-images/e-axon/forth-image.jpg',
     ],
-    liveLink: 'https://e-axon-website.vercel.app/',
+    liveLink: 'https://e-axon.netlify.app/',
     sourceCode: 'https://github.com/ImranSafdar360/e-axon-client-project',
   },
   {
