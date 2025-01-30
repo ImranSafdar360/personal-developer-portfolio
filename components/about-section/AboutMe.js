@@ -41,7 +41,7 @@ const AboutMe = () => {
               <h1 className="text-[48px] md:text-[60px] lg:text-[72px] font-robotoBold text-whole-text leading-tight">
                 <CountUp
                   from={0}
-                  to={6}
+                  to={1}
                   separator=","
                   direction="up"
                   duration={1}
@@ -49,7 +49,7 @@ const AboutMe = () => {
                 />
                 +</h1>
               <div className="w-full h-[2px] bg-secondary-bg my-4" />
-              <p className="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] leading-relaxed font-robotoRegular text-whole-text">Months of Experience</p>
+              <p className="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] leading-relaxed font-robotoRegular text-whole-text">Years of Experience</p>
             </div>
           </SpotlightCard>
         </div>
