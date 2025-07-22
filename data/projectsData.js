@@ -31,7 +31,7 @@ const projects = [
   title: 'Your Business Date Platform',
   tagline: 'Your Business Date - Professional Dating & Networking Platform',
   description: 'Your Business Date is a sophisticated business-focused dating and networking platform built with Next.js, combining professional networking with romantic connections. This innovative web application caters to career-oriented individuals seeking meaningful relationships while maintaining their professional network. The platform features advanced matching algorithms, integrated video calling, subscription-based monetization, and comprehensive business advertising solutions for companies targeting the dating market.',
-  image: '/images/Hero-Sections-Mockup-Images/ll2.webp',
+  image: '/images/Hero-Sections-Mockup-Images/ll2.png',
   technologies: [
     'Next.js', 
     'Redux Toolkit', 
