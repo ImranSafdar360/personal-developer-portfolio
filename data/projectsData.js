@@ -18,10 +18,10 @@ const projects = [
       'Background Playback: Continue listening while using other apps or with the screen off.'
     ],
     images: [
-      '/images/bento-images/blarecast/first-image.jpg',
-      '/images/bento-images/blarecast/second-image.jpg',
-      '/images/bento-images/blarecast/third-image.jpg',
-      '/images/bento-images/blarecast/forth-image.jpg',
+      '/images/bento-images/blarecast/first-image.webp',
+      '/images/bento-images/blarecast/second-image.webp',
+      '/images/bento-images/blarecast/third-image.webp',
+      '/images/bento-images/blarecast/forth-image.webp',
     ],
     liveLink: 'https://expo.dev/accounts/vaionex/projects/blarecast/builds/f4a5d5a9-da7a-4141-a358-c2de53d22180',
   },
