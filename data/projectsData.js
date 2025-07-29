@@ -110,7 +110,7 @@ const projects = [
       '/images/bento-images/e-axon/third-image.jpg',
       '/images/bento-images/e-axon/forth-image.jpg',
     ],
-    liveLink: 'https://e-axon.netlify.app/',
+    liveLink: 'https://www.e-axon.com/',
     sourceCode: 'https://github.com/ImranSafdar360/e-axon-client-project',
   },
   {
